@@ -1,0 +1,86 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:update-uri"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "comment": "My name is Dmitry Stashenko, I'm founder and lead developer of AdaStat.net Blockchain Explorer. I have been actively involved in the Cardano community since 2017. Every day I do my best to push Cardano forward",
+    "givenName": "AdaStat",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://avatars.githubusercontent.com/u/138822330",
+      "sha256": "6b459288625a1fc1cdd9ff91e8425cae2a2b965bd1232f7718835e947385bd3b"
+    },
+    "objectives": "Make Cardano a platform widely used by people all over the world",
+    "motivations": "Satisfaction and financial success for each ADA holders including myself",
+    "qualifications": "Founder and lead developer of AdaStat.net Blockchain Explorer, operator of STAT stakepool, smart contract developer",
+    "paymentAddress": "$adastat",
+    "references": [{
+        "@type": "Link",
+        "label": "AdaStat Cardano Blockchain Explorer",
+        "uri": "https://adastat.net/"
+      }, {
+        "@type": "Link",
+        "label": "AdaStat's Twitter",
+        "uri": "https://x.com/ada_stat"
+      }, {
+        "@type": "Link",
+        "label": "AdaStat's Telegram",
+        "uri": "https://t.me/CardanoExplorer"
+      }, {
+        "@type": "Link",
+        "label": "AdaStat's GitHub",
+        "uri": "https://github.com/CardanoExplorer"
+      }, {
+        "@type": "Link",
+        "label": "AdaStat's YouTube",
+        "uri": "https://www.youtube.com/@CardanoExplorer"
+      }, {
+        "@type": "Link",
+        "label": "AdaStat's Discord",
+        "uri": "https://discord.com/users/adastat"
+      }
+    ],
+    "externalUpdates": [{
+        "title": "GitHub",
+        "uri": "https://github.com/CardanoExplorer/drep"
+      }
+    ]
+  }
+}
